@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="HangmanModelStoreContainer" CdmEntityContainer="HangmanEntities">
+    <EntitySetMapping Name="Highscore">
+      <EntityTypeMapping TypeName="HangmanModel.Highscore">
+        <MappingFragment StoreEntitySet="Highscore">
+          <ScalarProperty Name="time_in_seconds" ColumnName="time_in_seconds" />
+          <ScalarProperty Name="trials" ColumnName="trials" />
+          <ScalarProperty Name="player" ColumnName="player" />
+          <ScalarProperty Name="hasWon" ColumnName="hasWon" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SearchWord">
+      <EntityTypeMapping TypeName="HangmanModel.SearchWord">
+        <MappingFragment StoreEntitySet="SearchWord">
+          <ScalarProperty Name="word" ColumnName="word" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

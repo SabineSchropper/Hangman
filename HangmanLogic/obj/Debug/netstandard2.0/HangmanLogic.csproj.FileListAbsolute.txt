@@ -1,0 +1,15 @@
+C:\Users\DCV\C#\Hangman\HangmanLogic\bin\Debug\netstandard2.0\HangmanLogic.deps.json
+C:\Users\DCV\C#\Hangman\HangmanLogic\bin\Debug\netstandard2.0\HangmanLogic.dll
+C:\Users\DCV\C#\Hangman\HangmanLogic\bin\Debug\netstandard2.0\HangmanLogic.pdb
+C:\Users\DCV\C#\Hangman\HangmanLogic\bin\Debug\netstandard2.0\HangmanData.dll
+C:\Users\DCV\C#\Hangman\HangmanLogic\bin\Debug\netstandard2.0\EntityFramework.dll
+C:\Users\DCV\C#\Hangman\HangmanLogic\bin\Debug\netstandard2.0\HangmanData.pdb
+C:\Users\DCV\C#\Hangman\HangmanLogic\bin\Debug\netstandard2.0\HangmanData.dll.config
+C:\Users\DCV\C#\Hangman\HangmanLogic\bin\Debug\netstandard2.0\EntityFramework.xml
+C:\Users\DCV\C#\Hangman\HangmanLogic\obj\Debug\netstandard2.0\HangmanLogic.csprojAssemblyReference.cache
+C:\Users\DCV\C#\Hangman\HangmanLogic\obj\Debug\netstandard2.0\HangmanLogic.AssemblyInfoInputs.cache
+C:\Users\DCV\C#\Hangman\HangmanLogic\obj\Debug\netstandard2.0\HangmanLogic.AssemblyInfo.cs
+C:\Users\DCV\C#\Hangman\HangmanLogic\obj\Debug\netstandard2.0\HangmanLogic.csproj.CoreCompileInputs.cache
+C:\Users\DCV\C#\Hangman\HangmanLogic\obj\Debug\netstandard2.0\HangmanLogic.csproj.CopyComplete
+C:\Users\DCV\C#\Hangman\HangmanLogic\obj\Debug\netstandard2.0\HangmanLogic.dll
+C:\Users\DCV\C#\Hangman\HangmanLogic\obj\Debug\netstandard2.0\HangmanLogic.pdb

@@ -1,0 +1,12 @@
+C:\Users\DCV\C#\Hangman\HangmanData\bin\Debug\HangmanData.dll.config
+C:\Users\DCV\C#\Hangman\HangmanData\bin\Debug\HangmanData.dll
+C:\Users\DCV\C#\Hangman\HangmanData\bin\Debug\HangmanData.pdb
+C:\Users\DCV\C#\Hangman\HangmanData\bin\Debug\EntityFramework.dll
+C:\Users\DCV\C#\Hangman\HangmanData\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DCV\C#\Hangman\HangmanData\bin\Debug\EntityFramework.xml
+C:\Users\DCV\C#\Hangman\HangmanData\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\DCV\C#\Hangman\HangmanData\obj\Debug\HangmanData.csprojAssemblyReference.cache
+C:\Users\DCV\C#\Hangman\HangmanData\obj\Debug\HangmanData.csproj.CoreCompileInputs.cache
+C:\Users\DCV\C#\Hangman\HangmanData\obj\Debug\HangmanData.csproj.CopyComplete
+C:\Users\DCV\C#\Hangman\HangmanData\obj\Debug\HangmanData.dll
+C:\Users\DCV\C#\Hangman\HangmanData\obj\Debug\HangmanData.pdb

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "AZ8DtOcNKyaFI5MrP45+4sz/nPvmu3IF+42fY/kANCDXmF/9ksq4u90+CqK74Xkv/E+OYFpSEWhroH5qoecqSw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\DCV\\C#\\Hangman\\HangmanLogic\\HangmanLogic.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DCV\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\DCV\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

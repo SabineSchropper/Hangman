@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HangmanModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="HangmanEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Highscore" EntityType="HangmanModel.Highscore" />
+    <EntitySet Name="SearchWord" EntityType="HangmanModel.SearchWord" />
+  </EntityContainer>
+  <EntityType Name="Highscore">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="hasWon" Type="Boolean" Nullable="false" />
+    <Property Name="player" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="trials" Type="Int32" />
+    <Property Name="time_in_seconds" Type="Int32" />
+  </EntityType>
+  <EntityType Name="SearchWord">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="word" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>
