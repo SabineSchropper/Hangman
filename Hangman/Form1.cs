@@ -32,8 +32,9 @@ namespace Hangman
 
         private void btnPlay_Click(object sender, EventArgs e)
         {
-            var form = new Play(controller);
+            var form = new Spieler(controller);
             form.Show();
+            
         }
     }
 }

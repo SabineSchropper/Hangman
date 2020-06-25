@@ -19,3 +19,5 @@ C:\Users\DCV\C#\Hangman\Hangman\obj\Debug\Hangman.csproj.CopyComplete
 C:\Users\DCV\C#\Hangman\Hangman\obj\Debug\Hangman.exe
 C:\Users\DCV\C#\Hangman\Hangman\obj\Debug\Hangman.pdb
 C:\Users\DCV\C#\Hangman\Hangman\obj\Debug\Hangman.Play.resources
+C:\Users\DCV\C#\Hangman\Hangman\obj\Debug\Hangman.Gratulation.resources
+C:\Users\DCV\C#\Hangman\Hangman\obj\Debug\Hangman.Spieler.resources
