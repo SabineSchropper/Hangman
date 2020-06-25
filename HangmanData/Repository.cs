@@ -26,6 +26,16 @@ namespace HangmanData
             entities.SearchWord.Add(searchWord);
             entities.SaveChanges();
         }
+        public void AddPlayToHighscore(Highscore highscore)
+        {
+            entities.Highscore.Add(highscore);
+            entities.SaveChanges();
+        }
+        public List<Highscore> GetHighscoreFromDatabase()
+        {
+            List<Highscore> highscores = entities.Highscore.Where(x => x.hasWon == true).OrderBy(x => x.time_in_seconds).Take(10).ToList();
+            return highscores;
+        }
 
     }
 }

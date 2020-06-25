@@ -21,3 +21,4 @@ C:\Users\DCV\C#\Hangman\Hangman\obj\Debug\Hangman.pdb
 C:\Users\DCV\C#\Hangman\Hangman\obj\Debug\Hangman.Play.resources
 C:\Users\DCV\C#\Hangman\Hangman\obj\Debug\Hangman.Gratulation.resources
 C:\Users\DCV\C#\Hangman\Hangman\obj\Debug\Hangman.Spieler.resources
+C:\Users\DCV\C#\Hangman\Hangman\obj\Debug\Hangman.Highscore.resources

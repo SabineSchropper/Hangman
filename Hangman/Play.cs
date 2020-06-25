@@ -1,14 +1,17 @@
 ﻿using HangmanData;
 using HangmanLogic;
+using Microsoft.SqlServer.Server;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Media;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -16,10 +19,13 @@ namespace Hangman
 {
     public partial class Play : Form
     {
-        Controller controller;
-        SearchWord randomWord;
+        public Controller controller;
+        public Stopwatch stopwatch = new Stopwatch();
+        public SearchWord randomWord;
+        
         public Play(Controller controller)
         {
+            stopwatch.Start();
             this.controller = controller;
             InitializeComponent();
             FindRandomWord();
@@ -66,11 +72,50 @@ namespace Hangman
         }
         public void CheckIfWon()
         {
+            bool trialsLeft;
             bool hasWon = controller.GetHasWon();
             if (hasWon)
             {
+                stopwatch.Stop();
+                controller.FormatTime(stopwatch.Elapsed);
+
                 var form = new Gratulation(controller);
                 form.Show();
+
+                var timer = new System.Windows.Forms.Timer();
+                timer.Interval = 10000;
+                timer.Tag = form;
+                timer.Tick += ((sender, e) =>
+                {
+                    form.Close();
+                    var timerSender = sender as System.Windows.Forms.Timer;
+                    timerSender.Stop();
+                    this.Close();
+                });
+                /*
+                 *         private void Timer_Tick(object sender, EventArgs e)
+                            {
+                                form.Close();
+                            }
+                 * 
+                 */
+                timer.Start();
+
+
+                
+                controller.SaveData();
+                
+            }
+            else
+            {
+                trialsLeft = controller.CheckIfThereAreTrialsLeft();
+                if (!trialsLeft)
+                {
+                    MessageBox.Show("Leider verloren. Du hast mehr als 10 mal falsch geraten.");
+                    stopwatch.Stop();
+                    controller.FormatTime(stopwatch.Elapsed);
+                    controller.SaveData();                  
+                }
             }
         }
     }

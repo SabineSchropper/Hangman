@@ -68,16 +68,16 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(86, 190);
+            this.label3.Location = new System.Drawing.Point(127, 198);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(136, 17);
+            this.label3.Size = new System.Drawing.Size(41, 17);
             this.label3.TabIndex = 3;
-            this.label3.Text = "Zeit in Sekunden:";
+            this.label3.Text = "Zeit:";
             // 
             // labelTime
             // 
             this.labelTime.AutoSize = true;
-            this.labelTime.Location = new System.Drawing.Point(126, 227);
+            this.labelTime.Location = new System.Drawing.Point(112, 228);
             this.labelTime.Name = "labelTime";
             this.labelTime.Size = new System.Drawing.Size(46, 17);
             this.labelTime.TabIndex = 4;
@@ -95,6 +95,8 @@
             this.Controls.Add(this.label1);
             this.Name = "Gratulation";
             this.Text = "Gratulation";
+            this.Load += new System.EventHandler(this.Gratulation_Load);
+            this.Shown += new System.EventHandler(this.Gratulation_Shown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

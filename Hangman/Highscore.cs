@@ -1,4 +1,5 @@
-﻿using HangmanLogic;
+﻿using HangmanData;
+using HangmanLogic;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,25 +13,18 @@ using System.Windows.Forms;
 
 namespace Hangman
 {
-    public partial class Gratulation : Form
+    public partial class Highscore : Form
     {
         Controller controller;
-        public Gratulation(Controller controller)
+
+        public Highscore(Controller controller)
         {
             this.controller = controller;
             InitializeComponent();
-            labelMistakes.Text = controller.GetMistakes().ToString();
-            labelTime.Text = controller.Time;
+            List<HighscoreShowModel> highscores = controller.GetHighscore();
+            dataGridView1.DataSource = highscores;
             
-        }
-
-        private void Gratulation_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Gratulation_Shown(object sender, EventArgs e)
-        {
+            
         }
     }
 }

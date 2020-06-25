@@ -33,6 +33,7 @@
             this.btnAddWord = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnPlay = new System.Windows.Forms.Button();
+            this.btnHighscore = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,7 +65,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(146, 26);
+            this.pictureBox1.Location = new System.Drawing.Point(177, 26);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(284, 307);
             this.pictureBox1.TabIndex = 3;
@@ -72,7 +73,7 @@
             // 
             // btnPlay
             // 
-            this.btnPlay.Location = new System.Drawing.Point(204, 357);
+            this.btnPlay.Location = new System.Drawing.Point(240, 356);
             this.btnPlay.Name = "btnPlay";
             this.btnPlay.Size = new System.Drawing.Size(167, 69);
             this.btnPlay.TabIndex = 4;
@@ -80,11 +81,22 @@
             this.btnPlay.UseVisualStyleBackColor = true;
             this.btnPlay.Click += new System.EventHandler(this.btnPlay_Click);
             // 
+            // btnHighscore
+            // 
+            this.btnHighscore.Location = new System.Drawing.Point(25, 26);
+            this.btnHighscore.Name = "btnHighscore";
+            this.btnHighscore.Size = new System.Drawing.Size(119, 59);
+            this.btnHighscore.TabIndex = 5;
+            this.btnHighscore.Text = "Highscore";
+            this.btnHighscore.UseVisualStyleBackColor = true;
+            this.btnHighscore.Click += new System.EventHandler(this.btnHighscore_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnHighscore);
             this.Controls.Add(this.btnPlay);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnAddWord);
@@ -105,6 +117,7 @@
         private System.Windows.Forms.Button btnAddWord;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnPlay;
+        private System.Windows.Forms.Button btnHighscore;
     }
 }
 

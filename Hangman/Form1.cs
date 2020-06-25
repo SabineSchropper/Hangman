@@ -1,4 +1,5 @@
-﻿using HangmanLogic;
+﻿using HangmanData;
+using HangmanLogic;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -35,6 +36,13 @@ namespace Hangman
             var form = new Spieler(controller);
             form.Show();
             
+        }
+
+        private void btnHighscore_Click(object sender, EventArgs e)
+        {
+            controller.HandleHighscore();
+            var form = new Highscore(controller);
+            form.Show();
         }
     }
 }
